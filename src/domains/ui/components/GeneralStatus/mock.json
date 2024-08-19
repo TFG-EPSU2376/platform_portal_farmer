@@ -1,0 +1,42 @@
+{
+  "estresHidrico": {
+    "valor": 0.65,
+    "unidad": "índice",
+    "rango": {
+      "min": 0,
+      "max": 1
+    },
+    "interpretacion": {
+      "bajo": [0, 0.3],
+      "moderado": [0.3, 0.7],
+      "alto": [0.7, 1]
+    }
+  },
+  "gradosDiaCrecimiento": {
+    "valor": 1250,
+    "unidad": "GDD",
+    "acumuladoDesde": "2024-01-01",
+    "etapaFenologica": "Envero"
+  },
+  "indiceVigorVegetativo": {
+    "valor": 0.72,
+    "unidad": "índice",
+    "rango": {
+      "min": 0,
+      "max": 1
+    },
+    "interpretacion": {
+      "bajo": [0, 0.4],
+      "moderado": [0.4, 0.7],
+      "alto": [0.7, 1]
+    }
+  },
+  "puntuacionGeneral": {
+    "valor": 3.8,
+    "unidad": "puntos",
+    "rango": {
+      "min": 1,
+      "max": 5
+    }
+  }
+}

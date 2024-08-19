@@ -1,0 +1,61 @@
+.gantt-chart {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.phases {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.phase {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+}
+
+.task-row {
+  display: flex;
+  margin-bottom: 5px;
+  height: 40px;
+}
+
+.module-name {
+  width: 200px;
+  padding: 5px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activities {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.activity {
+  position: absolute;
+  height: 100%;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 2px;
+  box-sizing: border-box;
+}
