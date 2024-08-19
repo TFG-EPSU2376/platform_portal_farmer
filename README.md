@@ -67,7 +67,7 @@ Amplify.configure({
     loginWith: {
       oauth: {
         domain:
-          "https://mutualsailfishdomain.auth.eu-central-1.amazoncognito.com",
+          "https://*.auth.eu-central-1.amazoncognito.com",
         scopes: [
           "phone",
           "name",
