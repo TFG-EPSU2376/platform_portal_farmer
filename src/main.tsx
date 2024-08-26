@@ -6,7 +6,6 @@ import * as amplify_auth from "./domains/auth/amplify";
 import store from "./domains/store/index.ts";
 import { ToastContainer } from "react-toastify";
 import { App } from "./domains/app/index.tsx";
-amplify_auth;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
