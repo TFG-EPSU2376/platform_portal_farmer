@@ -10,33 +10,9 @@ import {
 import { transformSensorData } from "../../sensors/utils";
 import { transformWeatherItem } from "../utils";
 
-//crear registro chart data para cada hora un valor y una fecha de 60 minutos de direncia
 const registroChartData = [];
-// for (let i = 0; i < 24; i++) {
-//   registroChartData.push({
-//     name: i,
-//     temperature: Math.floor(Math.random() * 100),
-//     humidity: Math.floor(Math.random() * 100),
-//     pressure: Math.floor(Math.random() * 100),
-//     precipitation: Math.floor(Math.random() * 100),
-//     date: new Date(Date.now() - 60 * 60 * 1000 * i).toLocaleString(),
-//   });
-// }
 
-//crear registro table data para cada media hora un valor y una fecha de 30 minutos de direncia
-// debe incluir date, type medicion( /temperatura, humedad, presion, estdo fruto, ), sensor que lo proporciona, valor e icono
 const registroTableData = [];
-// for (let i = 0; i < 24; i++) {
-//   registroTableData.push({
-//     date: new Date(Date.now() - 30 * 60 * 1000 * i).toLocaleString(),
-//     type: "Temperatura",
-//     sensor: "Sensor " + ((i % 4) + 1),
-//     value: Math.floor(Math.random() * 100),
-//     icon: <FaTemperatureHigh />,
-//     unity: "°C",
-//   });
-// }
-
 export const useSummaryView = ({ project }) => {
   const dahsboard = useDashboard({ project });
 
@@ -76,21 +52,9 @@ export const useSummaryView = ({ project }) => {
   const weatherForecastData = weatherForecastQuery?.data;
   const weather_forecast_days =
     weatherForecastData?.forecast?.map(transformWeatherItem) ?? [];
-  // return {
-  //   ndvi: ndviQuery.data,
-  //   isNdviLoading: ndviQuery.isLoading,
-  //   sensors: sensorsQuery.data,
-  //   chat_sensors,
-  //   weatherForecast: weatherForecastQuery.data,
-  //   isWeatherForecastFetching: weatherForecastQuery.isFetching,
-  //   weatherRainForecast: weatherRainForecastQuery.data,
-  //   isWeatherRainForecastFetching: weatherRainForecastQuery.isFetching,
-  // };
-
 
   const handleNDVIDateChange = (date) => {
      setDate(date);
-    // setCurrentDate(date);
   }
 
 const actions = {
