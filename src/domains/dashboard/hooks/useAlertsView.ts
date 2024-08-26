@@ -3,17 +3,6 @@ import { useMemo } from "react";
 import { useFetchAlerts } from "../../alerts/hooks/useFetchAlerts";
 import { useFetchRecomendations } from "../../recomendations/hooks/useFetchRecomendations";
 
-// const alertsData = [
-//   {
-//     reason: "Alerta de plagas detectada",
-//     description:
-//       "El plagas se detectó en el Viñedo I con una probabilidad de 10% y un nivel de humedad de 80%",
-//     date: "2024-05-23",
-//     color: "#ff0000",
-//     source: "Viñedo I - Sensor Soil 1",
-//   },
-// ];
-
 export const useAlertsView = ({ project }) => {
   const recomendations = useFetchRecomendations();
   const recommendationsData = useMemo(() => {
